@@ -9,4 +9,4 @@ if __name__ == "__main__":
             start_state = "q1", accept_states = {"q2"})
     print(M)
     for input_string in ["100", "101", "111"]:
-        print(M.__repr__() + " accepts" + input_string + "? " + str(M.accepts(input_string)))
+        print(M.__repr__() + " accepts " + input_string + "? " + str(M.accepts(input_string)))

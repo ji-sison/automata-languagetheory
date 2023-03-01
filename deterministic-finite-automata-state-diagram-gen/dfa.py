@@ -61,7 +61,7 @@ class DFA():
         for state in self.transition:
             state_transitions = self.transition[state]
             for symbol in self.alphabet:
-                string += "\n\t" + state + " , " + symbol + "->" + state_transitions[symbol]
+                string += "\n\t" + state + ", " + symbol + " -> " + state_transitions[symbol]
         return string
 
     def accepts(self, input_string = ""):
